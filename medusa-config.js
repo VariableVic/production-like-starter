@@ -83,9 +83,14 @@ if (DATABASE_URL && DATABASE_TYPE === "postgres") {
   delete projectConfig["database_database"];
 }
 
+const featureFlags = {
+  product_categories: true,
+};
+
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
   projectConfig,
   plugins,
   modules,
+  featureFlags,
 };
