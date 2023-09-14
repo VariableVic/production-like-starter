@@ -76,6 +76,11 @@ const projectConfig = {
   store_cors: STORE_CORS,
   admin_cors: ADMIN_CORS,
   redis_url: REDIS_URL,
+  redis_options: {
+    tls: {
+      rejectUnauthorized: false,
+    },
+  },
 };
 
 if (DATABASE_URL && DATABASE_TYPE === "postgres") {
