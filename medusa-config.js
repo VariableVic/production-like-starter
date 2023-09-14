@@ -54,12 +54,22 @@ const modules = {
     resolve: "@medusajs/event-bus-redis",
     options: {
       redisUrl: REDIS_URL,
+      redisOptions: {
+        tls: {
+          rejectUnauthorized: false,
+        },
+      },
     },
   },
   cacheService: {
     resolve: "@medusajs/cache-redis",
     options: {
       redisUrl: REDIS_URL,
+      redisOptions: {
+        tls: {
+          rejectUnauthorized: false,
+        },
+      },
     },
   },
 };
