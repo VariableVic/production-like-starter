@@ -48,7 +48,7 @@ const plugins = [
     },
   },
   {
-    resolve: `medusa-product-ai-widget`,
+    resolve: "medusa-product-ai-widget",
     options: {
       api_key: process.env.OPENAI_API_KEY,
       enableUI: true,
