@@ -47,6 +47,13 @@ const plugins = [
       secret_access_key: process.env.S3_SECRET_ACCESS_KEY,
     },
   },
+  {
+    resolve: `medusa-product-ai-widget`,
+    options: {
+      api_key: process.env.OPENAI_API_KEY,
+      enableUI: true,
+    },
+  },
 ];
 
 const modules = {
